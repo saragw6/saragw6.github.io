@@ -5,10 +5,10 @@ Successes and Failures
 ----------------------
 
 The redirect from my cs.tufts page was implimented correctly, as were my
-index.html and bio.html pages. My resume.html page was overall successful,
-although I was (so far) unable to find a solution to an error concerning <ul>
-in the nested list in my resume. The rendering of the page looks as I intended,
-but the HTML validator flags it as an error.
+index.html and bio.html pages. My resume.html page was successful in the end.
+Although I was temporarily  unable to find a solution to an error concerning
+<ul> in the nested list in my resume, I was able to solve the problem quickly
+when I came back to it with fresh eyes.
 
 -------------
 Collaborators
