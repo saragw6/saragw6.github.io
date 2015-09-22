@@ -1,13 +1,19 @@
-content {
+#content {
 	margin-left: 50px;
 	margin-top: 50px;
 }
 
-body {
+#body {
      font-family: Georgia;
      background-color: lightblue;
 }
 
-h1 {
+#h1 {
    font-family: Helvetica Neue;
+   font-size: 16px;
+}
+
+#h2 {
+    font-family: Helvetica Neue;
+    font-size: 14px;
 }
