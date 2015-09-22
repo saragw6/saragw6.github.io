@@ -1,3 +1,7 @@
+#page {
+	    background-color: lightblue;
+}
+
 #content {
 	margin-left: 50px;
 	margin-top: 50px;
@@ -5,15 +9,14 @@
 
 #body {
      font-family: Georgia;
-     background-color: lightblue;
 }
 
 #h1 {
    font-family: Helvetica Neue;
-   font-size: 16px;
+   font-size: 24px;
 }
 
 #h2 {
     font-family: Helvetica Neue;
-    font-size: 14px;
+    font-size: 20px;
 }
