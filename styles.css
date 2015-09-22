@@ -18,12 +18,11 @@ h2 {
     font-size: 20px;
 }
 
-a.link {
-      font-style: normal;
-      color: #0a0f44;
+a:link {
+       text-decoration: none;
+       color: orange;
 }
 
-a.visited {
-	  font-style: normal;
-	  color: #71EEB8;
+a:visited {
+	  text-decoration: underline;
 }
