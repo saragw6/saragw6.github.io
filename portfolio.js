@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  // Add smooth scrolling to all links
+// Add smooth scrolling to all links
   $(".caret, .sellpt > a").on('click', function(event) {
     //alert('this.href= ' + this.href);
     // Make sure this.hash has a value before overriding default behavior
@@ -20,5 +20,23 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
+  });
+});
+
+//SCROLL ANIMATE SVG
+$(document).ready(function() {
+  //variable for the 'stroke-dashoffset' unit
+  var $dashOffset = $(".clipper").css("height");
+  console.log($(".clipper").css("height"));
+  //on a scroll event - execute function
+  $(window).scroll(function() {
+    //calculate how far down the page the user is 
+    var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
+    //convert dashoffset pixel value to interger
+    //var $newUnit = parseInt($dashOffset, 10);
+    //get the value to be subtracted from the 'stroke-dashoffset'
+    var $newHeight = $percentageComplete * 640;
+    //set the new value of the dashoffset to create the drawing effect
+    $(".clipper").css("height", $newHeight);
   });
 });

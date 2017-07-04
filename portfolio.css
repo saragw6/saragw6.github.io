@@ -8,16 +8,17 @@
         /*font-family: 'PT Sans', sans-serif;*/
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 500;
-        min-width: 950px;
+        /*min-width: 950px;*/
       }
 
       .flex-container {
         display: flex;
-        height: 90vh;
+        min-height: 90vh;
       }
 
       .container {
-        height: 90vh;
+        min-height: 90vh;
+        height: auto;
       }
 
       #page1 {
@@ -42,31 +43,42 @@
 
 
       #name {
+        float: right;
         background-color: inherit;
-        text-align: center;
+        text-align: right;
         font-size: 300px;
         font-family: "Tall Films";
         padding-top: 5vw;
-        margin-bottom: -5vw;
+        /*margin-bottom: -5vw;*/
+        padding-right: 5vw;
+        border: 5px solid yellow;
       }
 
+      object {
+        float: right; /*positioning is weird*/
+      }
 
 
       #sellpt-container {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        position: fixed;
+        padding-left: 5vw; /*TODO - USE A MEDIA QUERY HERE INSTEAD */
+        padding-right: 5vw;
       }
 
       .sellpt {
         display: inline-block;
         width: 15vw;
-        padding: 5vw;
         font-family: 'PT Sans', sans-serif;
         font-size: 34px;
       }
 
       .sellpt img {
         /*width: inherit; !!broken by a href usage!! */
-        width: 200px;
+        width: 180px;
       }
 
       .sellpt a {
@@ -140,6 +152,7 @@
         margin-top: auto;
       }
 
+/* UI */
       .project {
         display: flex;
         font-size: 10pt;
@@ -151,6 +164,8 @@
         margin-right: 20px;
       }
 
+/* /UI */
+
       h1 {
         font-family: 'PT Sans', sans-serif;
         font-weight: bold;
@@ -160,3 +175,9 @@
         margin: -10px;
         margin-left: 0px;
       }
+
+      .clipper {
+        height: 400px;
+      }
+
+
