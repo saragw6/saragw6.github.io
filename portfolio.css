@@ -54,8 +54,8 @@
         border: 5px solid yellow;
       }
 
-      object {
-        float: right; /*positioning is weird*/
+      svg {
+        position: fixed;
       }
 
 
@@ -67,6 +67,7 @@
         position: fixed;
         padding-left: 5vw; /*TODO - USE A MEDIA QUERY HERE INSTEAD */
         padding-right: 5vw;
+        display: none;
       }
 
       .sellpt {
@@ -177,7 +178,7 @@
       }
 
       .clipper {
-        height: 400px;
+        height: 0px;
       }
 
 

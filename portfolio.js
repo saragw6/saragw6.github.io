@@ -26,12 +26,11 @@ $(document).ready(function(){
 //SCROLL ANIMATE SVG
 $(document).ready(function() {
   //variable for the 'stroke-dashoffset' unit
-  var $dashOffset = $(".clipper").css("height");
   console.log($(".clipper").css("height"));
   //on a scroll event - execute function
   $(window).scroll(function() {
     //calculate how far down the page the user is 
-    var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
+    var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())));
     //convert dashoffset pixel value to interger
     //var $newUnit = parseInt($dashOffset, 10);
     //get the value to be subtracted from the 'stroke-dashoffset'
