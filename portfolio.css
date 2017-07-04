@@ -1,19 +1,38 @@
+@namespace svg url(http://www.w3.org/2000/svg);
+
       @font-face {
       font-family: "Tall Films";
       src: url("Tall-Films/Tall Film.ttf");
       }
 
       body {
+        display: flex;
         margin: 0px;
         /*font-family: 'PT Sans', sans-serif;*/
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 500;
+        background-color: #EEEEEE;
         /*min-width: 950px;*/
+      }
+
+      #sidebar {
+        padding-top: 10vh; /*CHANGE THIS*/
+        flex: 1;
+      }
+
+      #sidebar > a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      #content {
+        flex: 3;
+        padding-right: 5vw;
       }
 
       .flex-container {
         display: flex;
-        min-height: 90vh;
+        min-height: 80vh;
       }
 
       .container {
@@ -22,23 +41,27 @@
       }
 
       #page1 {
-        background-color: #EEEEEE;
-        min-height: 100vh;
+        min-height: 80vh;
       }
 
       #page2 {
-        background-color: #A47DF2;
-        min-height: 100vh;
+        /*border: 2px solid #A47DF2;*/
+        min-height: 80vh;
+        padding-top: 10vh;
       }
 
       #page3 {
-        background-color: #F2F0B3;
-        min-height: 100vh;
+        /*border: 2px solid #F2F0B3;*/
+        min-height: 80vh;
+        padding-top: 10vh;
+
       }
 
       #page4 {
-        background-color: #ED6DD3;
-        min-height: 100vh;
+        /*border: 2px solid #ED6DD3;*/
+        min-height: 90vh;
+        padding-top: 10vh;
+
       }
 
 
@@ -50,12 +73,13 @@
         font-family: "Tall Films";
         padding-top: 5vw;
         /*margin-bottom: -5vw;*/
-        padding-right: 5vw;
-        border: 5px solid yellow;
+        /*padding-right: 5vw;*/
       }
 
       svg {
         position: fixed;
+        padding-left: 5vw;
+        padding-right: 5vw; /*TODO - MEDIA QUERY*/
       }
 
 
@@ -67,7 +91,6 @@
         position: fixed;
         padding-left: 5vw; /*TODO - USE A MEDIA QUERY HERE INSTEAD */
         padding-right: 5vw;
-        display: none;
       }
 
       .sellpt {
@@ -75,6 +98,7 @@
         width: 15vw;
         font-family: 'PT Sans', sans-serif;
         font-size: 34px;
+        display: none;
       }
 
       .sellpt img {
@@ -82,7 +106,7 @@
         width: 180px;
       }
 
-      .sellpt a {
+      #content > .sellpt a {
         text-decoration: inherit !important;
         color: inherit !important;
       }
@@ -93,7 +117,7 @@
         position: relative;
         cursor: pointer;
         left: 50%;
-        margin-left: -13px;
+        margin-left: -13px; /*TODO BOTTOM SPACING - MAY NEED TO NOT BE RELATIVE POS*/
       }
 
       .caret:before {
@@ -111,12 +135,12 @@
         position: absolute;
         top: 25%;
         left: 13px;
-        border-top: 11px solid;
+        border-top: 11px solid #EEEEEE;
         border-left: 11px solid transparent;
         border-right: 11px solid transparent;
       }
 
-      #page1 > div > .caret:after {
+      /*#page1 > div > .caret:after {
         border-top-color: #EEEEEE;
       }
 
@@ -126,11 +150,11 @@
 
       #page3 > div > .caret:after {
         border-top-color: #F2F0B3;
-      }
+      }*/
 
 
 
-      .side-icon {
+      /*.side-icon {
         flex: 1;
         text-align: center;
         display: flex;
@@ -151,6 +175,10 @@
         bottom: 0px;
         margin-bottom: auto;
         margin-top: auto;
+      }*/
+
+      #sidebar {
+        background-color: #EEEEEE;
       }
 
 /* UI */

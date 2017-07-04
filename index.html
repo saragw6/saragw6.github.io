@@ -14,6 +14,10 @@
     • HUGE problems when you resize page with lots of text
     • add way to nav back to top?
     • full name header, responsive
+    • when scroll is within a certain range, englarge relevant icon
+    • prgress black fill in stages, not continuously
+    • click region for sidebar links needs to be circular
+    • fix flex so sidebar doesn't get overrun
     -->
 
     <!-- VERY ROUGH DRAFT -->
@@ -32,176 +36,185 @@
   </head>
 
   <body>
+    <div id="sidebar">
+      <svg version="1.1"
+           baseProfile="full"
+           width="200" height="650"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <div id="page1">
-      <div class="container">
-        <div id="name">
-          SARA GW
+        <defs>
+          <clipPath id="cut-off-bottom">
+            <rect class="clipper" x="0" y="0" width="200"/>
+          </clipPath>
+        </defs>
+
+        <rect width="100%" height="100%" fill="transparent" />
+
+        <circle cx="100" cy="10" r="10" fill="#666677" />
+
+        <g stroke="#666677" stroke-width="5">
+          <circle cx="100" cy="120" r="80" fill="transparent" />
+          <circle cx="100" cy="340" r="80" fill="transparent" />
+          <circle cx="100" cy="560" r="80" fill="transparent" />
+
+          <line x1="100" y1="10" x2="100" y2="40" />
+          <line x1="100" y1="200" x2="100" y2="260" />
+          <line x1="100" y1="420" x2="100" y2="480" />
+        </g>
+
+        <g stroke-width="5"  stroke="black" clip-path="url(#cut-off-bottom)" >
+          <circle cx="100" cy="10" r="10" fill="black" stroke-width="0"/>
+          <circle cx="100" cy="120" r="80" fill="transparent" />
+          <circle cx="100" cy="340" r="80" fill="transparent" />
+          <circle cx="100" cy="560" r="80" fill="transparent" />
+
+          <line x1="100" y1="10" x2="100" y2="40" />
+          <line x1="100" y1="200" x2="100" y2="260" />
+          <line x1="100" y1="420" x2="100" y2="480" />
+        </g>
+
+
+         <image x="50" y="70" width="100"
+            xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png" />
+         <image x="50" y="290" width="100"
+            xlink:href="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png" />
+         <image x="50" y="510" width="100"
+            xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png" />
+
+
+          <a href="#page1"><circle cx="100" cy="10" r="15" fill="transparent" /></a>
+          <a href="#page2"><circle cx="100" cy="120" r="90" fill="transparent" stroke-width="0" /></a>
+          <a href="#page3"><circle cx="100" cy="340" r="90" fill="transparent" stroke-width="0" /></a>
+          <a href="#page4"><circle cx="100" cy="560" r="90" fill="transparent" stroke-width="0" /></a>
+
+        <!--<g clip-path="url(#cut-off-bottom)" >
+        <a href="#page2"><image x="50" y="50" width="100"
+            xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png" /></a>
+        <a href="#page3"><image x="50" y="270" width="100"
+            xlink:href="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png" /></a>
+        <image x="50" y="490" width="100"
+            xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png" />
+          </g>-->
+
+
+        <!--<text x="125" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+
+      use clipping and a rly tall gradient that you move down the page as the page scrolls
+      img clip is useless right now - embed as svg instead? or use image as clip mask
+
+      -->
+
+      </svg>    
+
+    </div>
+
+    <div id="content">
+      <div id="page1">
+        <div class="container">
+          <div id="name">
+            SARA GW
+          </div>
+
+          <!--<object data="demo.svg" type="image/svg+xml"></object>-->
+          <div id="sellpt-container"><a href="#page2">
+            <div class="sellpt">
+              <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png">
+              Development
+            </a></div> 
+            <div class="sellpt"><a href="#page3">
+              <img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png">
+              Design
+            </a></div>
+            <div class="sellpt"><a href="#page4">
+              <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png">
+              Social Justice
+            </a></div>
+          </div>
         </div>
+        <div><a href="#page2" class="caret"></a></div>
+      </div>
 
-
-
-
-
-<svg version="1.1"
-     baseProfile="full"
-     width="200" height="640"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-
-  <defs>
-    <clipPath id="cut-off-bottom">
-      <rect class="clipper" x="0" y="0" width="200"/>
-    </clipPath>
-  </defs>
-
-  <rect width="100%" height="100%" fill="red" />
-
-  <g stroke="black" stroke-width="5">
-    <circle cx="100" cy="100" r="80" fill="transparent" />
-    <circle cx="100" cy="320" r="80" fill="transparent" />
-    <circle cx="100" cy="540" r="80" fill="transparent" />
-
-    <line x1="100" y1="180" x2="100" y2="240" />
-    <line x1="100" y1="400" x2="100" y2="460" />
-  </g>
-
-  <image x="50" y="50" width="100"
-      xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png" />
-  <image x="50" y="270" width="100"
-      xlink:href="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png" />
-  <image x="50" y="490" width="100"
-      xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png" />
-
-  <g stroke-width="5"  stroke="green" clip-path="url(#cut-off-bottom)" >
-    <circle cx="100" cy="100" r="80" fill="transparent" />
-    <circle cx="100" cy="320" r="80" fill="transparent" />
-    <circle cx="100" cy="540" r="80" fill="transparent" />
-
-    <line x1="100" y1="180" x2="100" y2="240" />
-    <line x1="100" y1="400" x2="100" y2="460" />
-  </g>
-
-  <g clip-path="url(#cut-off-bottom)" >
-  <image x="50" y="50" width="100"
-      xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png" />
-  <image x="50" y="270" width="100"
-      xlink:href="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png" />
-  <image x="50" y="490" width="100"
-      xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png" />
-    </g>
-
-
-  <!--<text x="125" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
-
-use clipping and a rly tall gradient that you move down the page as the page scrolls
-img clip is useless right now - embed as svg instead? or use image as clip mask
-
--->
-
-</svg>
-
-
-
-
-        <!--<object data="demo.svg" type="image/svg+xml"></object>-->
-        <div id="sellpt-container"><a href="#page2">
-          <div class="sellpt">
-            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png">
-            Development
-          </a></div> 
-          <div class="sellpt"><a href="#page3">
-            <img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png">
-            Design
-          </a></div>
-          <div class="sellpt"><a href="#page4">
-            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png">
-            Social Justice
-          </a></div>
+      <div id="page2">
+        <div class="flex-container">
+          <!--<div class="side-icon"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png"></div>-->
+          <div class="side-text">
+            <h1>Web & Software Development</h1>
+            <p>I'm working towards a degree in Computer Science, and my internship experiences along the way have strengthened my skills as a website developer and software engineer.</p>
+            <h2>Work Experience</h2>
+            <p>Software Engineering Intern • Eager Platform, Co.</p>
+            <h6>Jun 2016 - Aug 2016 (2 months) | Cambridge, MA</h6>
+            <ul>
+              <li>Implemented a web application with HTML, Javascript, Angular and Go language</li>
+              <li> Integrated existing web plugins with Shopify's app store using the Shopify API</li>
+            </ul>
+            <p>Software Engineering Intern • Bluebeam Software</p>
+            <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
+            <ul><li>Collaborated with a team of developers on a new release of Studio Enterprise</li></ul>
+            <!--<h2>Projects</h2>
+            <p>unblack edges, music personality quiz</p>-->
+          </div>
         </div>
+        <div><a href="#page3" class="caret"></a></div>
       </div>
-      <div><a href="#page2" class="caret"></a></div>
-    </div>
 
-    <div id="page2">
-      <div class="flex-container">
-        <div class="side-icon"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png"></div>
-        <div class="side-text">
-          <h1>Web & Software Development</h1>
-          <p>I'm working towards a degree in Computer Science, and my internship experiences along the way have strengthened my skills as a website developer and software engineer.</p>
-          <h2>Work Experience</h2>
-          <p>Software Engineering Intern • Eager Platform, Co.</p>
-          <h6>Jun 2016 - Aug 2016 (2 months) | Cambridge, MA</h6>
-          <ul>
-            <li>Implemented a web application with HTML, Javascript, Angular and Go language</li>
-            <li> Integrated existing web plugins with Shopify's app store using the Shopify API</li>
-          </ul>
-          <p>Software Engineering Intern • Bluebeam Software</p>
-          <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
-          <ul><li>Collaborated with a team of developers on a new release of Studio Enterprise</li></ul>
-          <!--<h2>Projects</h2>
-          <p>unblack edges, music personality quiz</p>-->
+      <div id="page3">
+        <div class="flex-container">
+          <!--<div class="side-icon"><img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png"></div>-->
+          <div class="side-text">
+            <h1>User Interface & Graphic Design</h1>
+            <p>In designing digital graphics or crafting user interfaces, I get to combine my visual skills with the more analytical world of computer science.</p>
+            <h2>Projects</h2>
+            <div class="project">
+              <div class="visual">
+                <a href="http://hd2yq4.axshare.com/menu.html" target="new"><img src="jumboffcampus.gif" height="150px"></a>
+              </div>
+              <div class="description">
+                <div class="title"><a href="http://hd2yq4.axshare.com/menu.html" target="new">Jumboffcampus</a></div> is a user interface project that I worked on with a partner in my Human-Computer Interaction course this semester. We created a web prototype for a mobile app to help Tufts University students find off-campus housing and form a community to share advice for the housing search. Over a period of several weeks we created a preliminary design report, a full design and specification, a low-fidelity prototype that we tested ourselves, and then a medium fidelity prototype for formal usability testing. Finally, we redesigned and implemented the prototype you see at the link, based on the results of our user testing. We used Axure RP to create our prototypes, so what you see is not an example of my code, but it is an interface prototype I created.
+              </div>
+            </div>
+            <div class="project">
+                <div class="visual">
+                  <a href="http://saragw6.github.io/music-personality/" target="new"><img src="20-20.gif" width="150px"></a>
+                </div>
+                <div class="description">
+                  <div class="title"><a href="http://saragw6.github.io/music-personality/" target="new">Twenty/Twenty</a></div> is a music personality quiz I created with a group in my Web Programming course last semester. Our assignment was simply to create any web application having to do with music. We worked together to create a buzzfeed-esque personality quiz that builds a song as the user responds to questions. Users can see how their answers compare to others’, share their results on Facebook, or enter another user’s “song code” to hear a friend’s results. I found this project extremely rewarding because we had the freedom to create whatever we envisioned. Furthermore, we got to put together all of the tools we had learned so far, and we also pushed ourselves to learn a few more along the way. We used HTML, CSS, Javascript, jQuery, Ajax, Node.js, geolocation, Bootstrap, MongoDB, local storage, the Facebook API, and more to create this quiz and we were overjoyed to see our hard work come together in a tangible product.
+                </div>
+              </div>
+          </div>
         </div>
+        <div><a href="#page4" class="caret"></a></div>
       </div>
-      <div><a href="#page3" class="caret"></a></div>
-    </div>
 
-    <div id="page3">
-      <div class="flex-container">
-        <div class="side-icon"><img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png"></div>
-        <div class="side-text">
-          <h1>User Interface & Graphic Design</h1>
-          <p>In designing digital graphics or crafting user interfaces, I get to combine my visual skills with the more analytical world of computer science.</p>
-          <h2>Projects</h2>
-          <div class="project">
-    <div class="visual">
-      <a href="http://hd2yq4.axshare.com/menu.html" target="new"><img src="jumboffcampus.gif" height="150px"></a>
-    </div>
-    <div class="description">
-      <div class="title"><a href="http://hd2yq4.axshare.com/menu.html" target="new">Jumboffcampus</a></div> is a user interface project that I worked on with a partner in my Human-Computer Interaction course this semester. We created a web prototype for a mobile app to help Tufts University students find off-campus housing and form a community to share advice for the housing search. Over a period of several weeks we created a preliminary design report, a full design and specification, a low-fidelity prototype that we tested ourselves, and then a medium fidelity prototype for formal usability testing. Finally, we redesigned and implemented the prototype you see at the link, based on the results of our user testing. We used Axure RP to create our prototypes, so what you see is not an example of my code, but it is an interface prototype I created.
-    </div>
-  </div>
-<div class="project">
-    <div class="visual">
-      <a href="http://saragw6.github.io/music-personality/" target="new"><img src="20-20.gif" width="150px"></a>
-    </div>
-    <div class="description">
-      <div class="title"><a href="http://saragw6.github.io/music-personality/" target="new">Twenty/Twenty</a></div> is a music personality quiz I created with a group in my Web Programming course last semester. Our assignment was simply to create any web application having to do with music. We worked together to create a buzzfeed-esque personality quiz that builds a song as the user responds to questions. Users can see how their answers compare to others’, share their results on Facebook, or enter another user’s “song code” to hear a friend’s results. I found this project extremely rewarding because we had the freedom to create whatever we envisioned. Furthermore, we got to put together all of the tools we had learned so far, and we also pushed ourselves to learn a few more along the way. We used HTML, CSS, Javascript, jQuery, Ajax, Node.js, geolocation, Bootstrap, MongoDB, local storage, the Facebook API, and more to create this quiz and we were overjoyed to see our hard work come together in a tangible product.
-    </div>
-  </div>
+      <div id="page4">
+        <div class="flex-container">
+          <!--<div class="side-icon"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png"></div>-->
+          <div class="side-text">
+            <h1>Social Justice Work</h1>
+            I'm majoring in Gender Studies because I want to learn to think critically about power systems that disadvantage groups such as women, people of color, and LGBTQ folks. I hope to apply my studies to create real change and lift up people who have been unfairly treated.
+            <h2>Work Experience</h2>
+            <p>Research and Archive Assistant • Haifa Women's Coalition</p>
+            <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
+            <ul>
+              <li>Researched and authored a position paper for use in policy making</li>
+              <li>Implemented online archive of historical Israeli feminist organizations</li>
+              <li>Selected grant-giving organizations and wrote grant proposals</li>
+            </ul>
+            <h2>Organizations</h2>
+            <p>Peer Educator • Tufts Women's Center</p>
+            <h6>Sep 2015 to Present (1 year, 10 months) | Somerville, Massachusetts</h6>
+            <ul>
+              <li>Build workshops on gender and intentional space</li>
+              <li>Conduct workshops for student groups on campus</li>
+            </ul>
+            <p>Co-chair • Jewish and Queer Students at Tufts (JQUEST)</p>
+            <h6>Dec 2014 to May 2016 (1 year, 5 months)Somerville, Massachusetts</h6>
+            <ul>
+              <li>Organize events to bring together Jewish and queer communities</li>
+              <li>Facilitate discussion group to foster community and support</li>
+            </ul>
         </div>
-      </div>
-      <div><a href="#page4" class="caret"></a></div>
-    </div>
-
-    <div id="page4">
-      <div class="flex-container">
-        <div class="side-icon"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png"></div>
-        <div class="side-text">
-          <h1>Social Justice Work</h1>
-          I'm majoring in Gender Studies because I want to learn to think critically about power systems that disadvantage groups such as women, people of color, and LGBTQ folks. I hope to apply my studies to create real change and lift up people who have been unfairly treated.
-          <h2>Work Experience</h2>
-          <p>Research and Archive Assistant • Haifa Women's Coalition</p>
-          <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
-          <ul>
-            <li>Researched and authored a position paper for use in policy making</li>
-            <li>Implemented online archive of historical Israeli feminist organizations</li>
-            <li>Selected grant-giving organizations and wrote grant proposals</li>
-          </ul>
-          <h2>Organizations</h2>
-          <p>Peer Educator • Tufts Women's Center</p>
-          <h6>Sep 2015 to Present (1 year, 10 months) | Somerville, Massachusetts</h6>
-          <ul>
-            <li>Build workshops on gender and intentional space</li>
-            <li>Conduct workshops for student groups on campus</li>
-          </ul>
-          <p>Co-chair • Jewish and Queer Students at Tufts (JQUEST)</p>
-          <h6>Dec 2014 to May 2016 (1 year, 5 months)Somerville, Massachusetts</h6>
-          <ul>
-            <li>Organize events to bring together Jewish and queer communities</li>
-            <li>Facilitate discussion group to foster community and support</li>
-          </ul>
-      </div>
+        </div>
       </div>
     </div>
 
