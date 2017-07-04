@@ -65,7 +65,13 @@
       }
 
       .sellpt img {
-        width: inherit;
+        /*width: inherit; !!broken by a href usage!! */
+        width: 200px;
+      }
+
+      .sellpt a {
+        text-decoration: inherit !important;
+        color: inherit !important;
       }
 
 
