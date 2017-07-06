@@ -48,9 +48,9 @@ $(document).ready(function() {
 
 
 function updateSvgWidth() {
-  var $maxWidth = 200;
+  var $maxWidth = Math.min(200, $(window).height() * .25);
   var $newWidth = $("#sidebar").width();
-  console.log($newWidth);
+
   $("svg").css("width", Math.min($newWidth, $maxWidth));
 }
 
