@@ -4,7 +4,7 @@ $(document).ready(function(){
     console.log(this.href.baseVal);
     // Make sure this.hash has a value before overriding default behavior
     if (!$.isEmptyObject(this.href.baseVal)) {
-      smoothScroll(this.href.baseVal);
+      smoothScroll('div' + this.href.baseVal);
     } else if (!$.isEmptyObject(this.hash)) {
       // Prevent default anchor click behavior
 
@@ -34,14 +34,27 @@ function smoothScroll(target) {
 //SCROLL ANIMATE SVG
 $(document).ready(function() {
   //variable for the 'stroke-dashoffset' unit
-  updateSidebar();
+  updateSvgWidth();
+  updateSidebarFill();
   //on a scroll event - execute function
   $(window).scroll(function() {
-    updateSidebar();
+    updateSidebarFill();
+  });
+
+  $(window).resize(function() {
+    updateSvgWidth()
   });
 });
 
-function updateSidebar() {
+
+function updateSvgWidth() {
+  var $maxWidth = 200;
+  var $newWidth = $("#sidebar").width();
+  console.log($newWidth);
+  $("svg").css("width", Math.min($newWidth, $maxWidth));
+}
+
+function updateSidebarFill() {
     //calculate how far down the page the user is 
     var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())));
     //get the value to be subtracted from the 'stroke-dashoffset'

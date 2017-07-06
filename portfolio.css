@@ -16,8 +16,11 @@
       }
 
       #sidebar {
+        background-color: #EEEEEE;
         padding-top: 10vh; /*CHANGE THIS*/
+        padding-right: 20px;
         flex: 1;
+        /*flex-basis: 33%; /*not sure if i need this*/
       }
 
       #sidebar > a {
@@ -28,6 +31,7 @@
       #content {
         flex: 3;
         padding-right: 5vw;
+        padding-left: 5vw;
       }
 
       .flex-container {
@@ -77,6 +81,7 @@
       }
 
       svg {
+        width: inherit;
         position: fixed;
         padding-left: 5vw;
         padding-right: 5vw; /*TODO - MEDIA QUERY*/
@@ -177,9 +182,6 @@
         margin-top: auto;
       }*/
 
-      #sidebar {
-        background-color: #EEEEEE;
-      }
 
 /* UI */
       .project {
