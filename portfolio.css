@@ -21,15 +21,17 @@
         /*font-family: 'PT Sans', sans-serif;*/
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 500;
-        background-color: #121924;
+        /*background-color: #121924;*/
+        background-image: url("bg.svg");
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
         color: #ADADAD;
         /*min-width: 950px;*/
       }
 
-      
+
 
       #sidebar {
-        background-color: #121924;
         padding-top: 10vh; /*CHANGE THIS*/
         padding-right: 20px;
         flex: 1;
@@ -118,7 +120,7 @@
         position: absolute;
         top: 25%;
         left: 12px;
-        border-top: 15px solid #332F5E;
+        border-top: 15px solid #121924;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
       }
@@ -165,7 +167,8 @@
       }
 
       h1, h2, h6 {
-        color: #332F5E;
+        /*color: #121924;*/
+        color: #232C4C;
       }
 
       .clipper {

@@ -20,6 +20,9 @@
     • fix flex so sidebar doesn't get overrun
     • fix sidebar size on load
     • add function so sidebar doesn't show befor eits sized, something like onload or onready and visibility
+    • whats the deal with page 2 width???
+    • keep your name on screen
+    • css gradient faster than svg to load
     -->
 
     <!-- VERY ROUGH DRAFT -->
@@ -49,6 +52,7 @@
         <defs>
           <clipPath id="cut-off-bottom">
             <rect class="clipper" x="0" y="0" width="200"/>
+            <!--<circle cx="100" cy="120" r="80" fill="transparent" />-->
           </clipPath>
 
 
@@ -120,9 +124,9 @@
           <line x1="100" y1="420" x2="100" y2="480" />
         </g>
 
-        <g stroke-width="5"  stroke="#332F5E" clip-path="url(#cut-off-bottom)" >
+        <g stroke-width="5"  stroke="#232C4C" clip-path="url(#cut-off-bottom)" >
           <use xlink:href="#icons" fill="#38B77A"></use>
-          <circle cx="100" cy="10" r="10" fill="#332F5E" stroke-width="0"/>
+          <circle cx="100" cy="10" r="10" fill="#232C4C" stroke-width="0"/>
           <circle cx="100" cy="120" r="80" fill="transparent" />
           <circle cx="100" cy="340" r="80" fill="transparent" />
           <circle cx="100" cy="560" r="80" fill="transparent" />
@@ -172,21 +176,17 @@
             <h1>Web & Software Development</h1>
             <p>I'm working towards a degree in Computer Science, and my internship experiences along the way have strengthened my skills as a website developer and software engineer.</p>
             <h2>Work Experience</h2>
-            <div class="halfcontainer">
               <p>Software Engineering Intern • Eager Platform, Co.</p>
               <h6>Jun 2016 - Aug 2016 (2 months) | Cambridge, MA</h6>
               <ul>
                 <li>Implemented a web application with HTML, Javascript, Angular and Go language</li>
                 <li> Integrated existing web plugins with Shopify's app store using the Shopify API</li>
               </ul>
-            </div>
-            <div class="halfcontainer">
               <p>Software Engineering Intern • Bluebeam Software</p>
               <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
               <ul><li>Collaborated with a team of developers on a new release of Studio Enterprise</li></ul>
               <!--<h2>Projects</h2>
               <p>unblack edges, music personality quiz</p>-->
-            </div>
           </div>
         </div>
         <div><a href="#page3" class="caret"></a></div>
