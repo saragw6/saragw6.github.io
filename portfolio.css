@@ -21,14 +21,15 @@
         /*font-family: 'PT Sans', sans-serif;*/
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 500;
-        background-color: #EEEEEE;
+        background-color: #121924;
+        color: #ADADAD;
         /*min-width: 950px;*/
       }
 
-
+      
 
       #sidebar {
-        background-color: #EEEEEE;
+        background-color: #121924;
         padding-top: 10vh; /*CHANGE THIS*/
         padding-right: 20px;
         flex: 1;
@@ -75,14 +76,12 @@
         /*border: 2px solid #F2F0B3;*/
         min-height: 80vh;
         padding-top: 10vh;
-
       }
 
       #page4 {
         /*border: 2px solid #ED6DD3;*/
         min-height: 90vh;
         padding-top: 10vh;
-
       }
 
 
@@ -95,7 +94,7 @@
         font-size: 20vmax;
         font-family: "Gogoia";
         padding-top: 5vw;
-        color: #2C2C2C;
+        color: #38B77A;
         /*margin-bottom: -5vw;*/
         /*padding-right: 5vw;*/
       }
@@ -119,7 +118,7 @@
         position: absolute;
         top: 25%;
         left: 12px;
-        border-top: 15px solid #000000;
+        border-top: 15px solid #332F5E;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
       }
@@ -129,7 +128,7 @@
         position: absolute;
         top: 25%;
         left: 16px;
-        border-top: 11px solid #EEEEEE;
+        border-top: 11px solid #121924;
         border-left: 11px solid transparent;
         border-right: 11px solid transparent;
       }
@@ -166,7 +165,7 @@
       }
 
       h1, h2, h6 {
-        color: #2C2C2C;
+        color: #332F5E;
       }
 
       .clipper {
