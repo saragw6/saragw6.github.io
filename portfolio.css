@@ -131,9 +131,10 @@
         position: absolute;
         top: 25%;
         left: 12px;
-        border-top: 15px solid #121924;
+        border-top: 15px solid #38B77A;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
+        z-index: -10;
       }
 
       .caret:after {
@@ -141,7 +142,7 @@
         position: absolute;
         top: 25%;
         left: 16px;
-        border-top: 11px solid #121924;
+        border-top: 11px solid #222;
         border-left: 11px solid transparent;
         border-right: 11px solid transparent;
       }
@@ -163,23 +164,28 @@
 
       h1 {
         /*font-family: 'PT Sans', sans-serif;*/
-        font-family: "Axis";
+        font-family: "gotham-pro-bold";
         font-weight: bold;
       }
 
       h2 {
-        font-family: "Axis";
+        font-family: "gotham-pro-bold";
       }
 
       h6 {
-        font-family: "Axis";
+        font-family: "gotham-pro-bold";
         margin: -10px;
         margin-left: 0px;
       }
 
-      h1, h2, h6 {
-        /*color: #121924;*/
-        color: #232C4C;
+      h1, h2 {
+        color: #38B77A;
+      }
+
+      h6 {
+        /*color: #121924;
+        color: #232C4C;*/
+        color: #FD7C6E;
       }
 
       .clipper {
