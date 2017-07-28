@@ -6,23 +6,40 @@
     <!-- TODO 
     • MAKE FONT SIZES RESPONSIVE
     • make cards that flip like at Prime Portal, saying little thing about each when you hover?
-    • make metas for colors that actually work
-    • make sidebar that has oulines that fill with a color as you scroll - lol cute idea how tho
+    • use css vars for colors
+    ✔ make sidebar that has oulines that fill with a color as you scroll - lol cute idea how tho
     • socail justice doubles lines :/
-    • fix flexbox when it gets rly narrow it gets weird
+    ✔ fix flexbox when it gets rly narrow it gets weird
     • change margins to be responsive not px
-    • HUGE problems when you resize page with lots of text
+    ✔ HUGE problems when you resize page with lots of text
     • add way to nav back to top?
     • full name header, responsive
     • when scroll is within a certain range, englarge relevant icon
     • prgress black fill in stages, not continuously
     • click region for sidebar links needs to be circular
-    • fix flex so sidebar doesn't get overrun
-    • fix sidebar size on load
+    ✔ fix flex so sidebar doesn't get overrun
+    • fix sidebar size on load !!
     • add function so sidebar doesn't show befor eits sized, something like onload or onready and visibility
-    • whats the deal with page 2 width???
+    ✔ whats the deal with page 2 width???
     • keep your name on screen
     • css gradient faster than svg to load
+
+    • header w/ name & icons that link & highlight
+    • fade in/come in from ceiling as u scroll past hero page w/ name
+    • hero image????
+    • alternative light & dark backgrounds, inspired by gogia ad
+    • dark/light toggle theme button
+    • somewhere on the header and/or hero landing, use words to go with icons
+    • add footer to look profesh
+
+    • use UI design projects carousel, with a small general blurb and a "read more" link to a fully fledged portfolio page, updated to match theme of site
+    • include links to github and linkedin
+    • add more about bluebeam
+    • add projects? to dev tab
+    • design each page individually for layout - use boxes, multiple columns, icons, 
+
+    • smooth scroll for header links !!!!
+
     -->
 
     <!-- VERY ROUGH DRAFT -->
@@ -41,6 +58,27 @@
   </head>
 
   <body>
+    <div id="navbar">
+      <div id="navbarname">
+        Sara Goldstein-Weiss
+      </div>
+      <div id="navbaricons">
+        <a href="#page2" class="navbaricon" id="codericon"></a>
+        <a href="#page3" class="navbaricon" id="pencilicon"></a>
+        <a href="#page4" class="navbaricon" id="scalesicon"></a>
+      </div>
+    </div>
+
+    <!--<div class="screen-shadow"></div> -->
+
+
+<!--- COMPUTER ICON -->
+<svg id="computericon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" ><defs id="svgEditorDefs"><path id="svgEditorClosePathDefs" stroke="black" fill="none" style="stroke-width: 1px;"/></defs><g opacity=".35"><rect id="svgEditorBackground" x="0" y="0" width="1200" height="640" style="fill: none;"/><path class="path" stroke="black" stroke-width="0.25" id="e8_area2" style="fill: none;" d="M235.958 350.943z"/><path class="path" d="M62.141791437524176,48.26317692432562c-28.860124139120842,2.0401179954082522,-19.347249152001808,9.244150332335309,-20.410493827160508,42.87037037037044c3.7700886581747284,49.033627445442534,-2.903204748451202,40.271341129413685,42.2777777777778,40.86419753086423c58.56987141511789,-3.388625080031119,48.714066849622014,1.8689172116158375,50.46912054368002,-21.608024691358168c-0.7449463059419372,-22.344225853591198,0.17132389336592269,-33.81040344324022,-1.5432098765431874,-56.283950617283914c-2.2423115476868816,-10.847003964167094,1.721745472767907,-8.519972339036073,-12.120370370370324,-8.709876543209852c-16.66618991721232,-0.07262025355653634,-28.455529186220133,0.8211214255572798,-39.938256346149245,1.4104938271604794Z" stroke="black" id="e12_curve3" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px;"/><path class="path" d="M29.89179143752419,54.26317692432562c0.2550704974523228,27.42917278996947,0.506320556077867,42.64540872695757,4.25,79c1.0986177155270411,14.971875223659708,-0.10554908425407916,10.369578806360153,16,11c38.35554908425411,-1.1195788063601526,68.68633512748488,-1.1466466308597205,78.24998474121095,-2c13.813649613726056,-2.3533533691402795,20.446280002324727,-0.7340894094178338,19.75,-10c0.47964592360119696,-11.250478491816594,2.8707095215798972,-27.066319771288732,2.5,-48.5c-0.2842897684935224,-15.341087636118687,-1.5869942138937176,-23.707432709244813,-4.500000000000057,-41.72222222222223c-3.8975736873408096,-11.011703093224309,3.393858813514214,-8.931698110868936,-18.987654320987588,-10.867283950617281c-24.80435264067458,-1.5374376916001928,-48.08267725311697,2.1520558706071746,-63.58640449429737,4.35493827160494c-14.886443290563143,3.1442404256891052,-24.088367444867295,3.948745427152957,-33.42592592592593,7.98456790123457Z" stroke="black" id="computer" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px; fill-opacity: 0;"/><path class="path" d="M147.14177617873514,41.01317692432562c-0.12543859242958888,-0.12455986323567458,-1.1958697700123366,-1.1818128341046759,-0.5,-0.5c2.6958697700123366,1.1818128341046759,13.274010179431798,8.87424738432037,19.25,14.75c7.725989820568202,6.12575261567963,5.203129120780602,3.8999267156966653,7.5,14.25c1.046870879219398,9.100073284303335,1.8570814095434116,16.61264170492001,2,26.5c-0.8570814095434118,15.637358295079707,2.5145481883486696,9.327364861068418,-8,21.249999999999943c-5.7645481883486696,6.672635138931639,-13.60815624606414,12.447010554380768,-19,16.250000000000057" stroke="black" id="e16_curve3" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px;"/><path class="path" d="M42.89179143752419,145.01317692432565c0.9665858466140379,9.295744808328436,0.8005406813644242,13.409843943104306,1.5,17.750000000000114c0.44945931863563265,8.590156056895694,0.8417269059990816,5.017586386374262,14.71913580246914,5.265432098765331c27.189137291531893,0.21698151486012313,65.5611836312552,-1.839787292284285,78.66356498812456,-2.5740740740741046c13.336949258103857,-2.1170028311724423,10.347380294439063,2.7732864319894475,10.867283950617264,-10.941358024691397c-0.23009634382179917,-4.21464445668073,-0.3940165148529219,-11.315540155945143,-1.5,-15.999999999999943" stroke="black" id="e18_curve3" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px;"/><path class="path" d="M148.06600559579016,164.1697871769624c6.910867576365774,-4.494215598414712,16.920192204718205,-13.804098533870103,23,-19.25c-0.17019220471820518,-9.195901466129897,-1.1368697543040867,-19.576169185942263,-2,-29.2067901234568" stroke="black" id="e20_curve3" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px;"/><path class="path" d="M119.9195539565129,63.571818899634266c0.6429732565122783,6.165416988445315,1.3936788113824718,18.55205864380349,1.5,24.75c0.10632118861752815,6.197941356196509,-0.11845567234962577,16.31290009972048,-0.5,22.5" stroke="black" id="e24_curve3" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px;"/>
+<path class="path filled" d="M118.9870162207,119.76318359375a0.90486,0.90486 0 1,0 1.80972,0a0.90486,0.90486 0 1,0 -1.80972,0"/><path class="path filled" d="M52.06606206740703,66.31923771534125c-3.6893756114492087,1.2757110009695225,-2.2910954805464883,-0.7736345087157586,-1.5000000000000568,5.562499999999943c1.8535954805464598,8.523634508715872,-0.02256599004712715,7.596689039912349,5.062500000000057,7.0000000000001705c6.2725659900471555,-2.0966890399124054,4.951191256266554,-0.16756751287755384,3.75,-6.312500000000114c-0.38869125626661116,-1.3949324871224467,-0.7299653751565246,-3.4077761597444582,-1.0625000000000284,-5.5c-0.3325346248434756,-2.967223840255542,-1.725961722243511,-1.9679187471239743,-3.5625,-1.5Z" stroke="black" id="e32_curve3" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px; fill-opacity: 1;" fill="black"/><path class="path" d="M101.12843999709452,152.39281559620065c1.7156145994577514,0.12113776713931657,4.732422438689355,0.2293696472635247,6.875,0.25c2.1425775613106453,0.020630352736418445,7.700553091471932,-0.21303012249268255,10.25,-0.5c2.5494469085280684,-0.28696987750737446,4.611162492330493,-0.6125039170551076,7.125,-1.125" stroke="black" id="e34_curve3" fill="none" style="stroke-linecap: round; stroke-linejoin: round;"/>
+<path class="path" d="M134.21349777343,151.88848876953a2.67847,2.67847 0 1,0 5.35694,0a2.67847,2.67847 0 1,0 -5.35694,0"/>
+<path class="path" d="M101.12843999709452,152.39281559620065c1.7156145994577514,0.12113776713931657,4.732422438689355,0.2293696472635247,6.875,0.25c2.1425775613106453,0.020630352736418445,7.700553091471932,-0.21303012249268255,10.25,-0.5c2.5494469085280684,-0.28696987750737446,4.611162492330493,-0.6125039170551076,7.125,-1.125" stroke="black" id="e1_curve3" fill="none" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.33px; fill-opacity: 1;"/><circle  class="path filled" id="e1_circle" cx="136.8919677734375" cy="151.88848876953125" stroke="black" style="stroke-width: 1px; fill-opacity: 1;" r="2.67847" fill="none"/></g></svg>
+<!-- end computer icon -->
+
     <div id="sidebar">
       <svg version="1.1"
            width="33%"
@@ -136,10 +174,11 @@
           <line x1="100" y1="420" x2="100" y2="480" />
         </g>
 
-          <a href="#page1"><circle cx="100" cy="10" r="15" fill="transparent" /></a>
-          <a href="#page2"><circle cx="100" cy="120" r="90" fill="transparent" stroke-width="0" /></a>
-          <a href="#page3"><circle cx="100" cy="340" r="90" fill="transparent" stroke-width="0" /></a>
-          <a href="#page4"><circle cx="100" cy="560" r="90" fill="transparent" stroke-width="0" /></a>
+
+          <a xlink:href="#page1"><circle cx="100" cy="10" r="15" fill="transparent" /></a>
+          <a xlink:href="#page2"><circle cx="100" cy="120" r="90" fill="transparent" stroke-width="0" /></a>
+          <a xlink:href="#page3"><circle cx="100" cy="340" r="90" fill="transparent" stroke-width="0" /></a>
+          <a xlink:href="#page4"><circle cx="100" cy="560" r="90" fill="transparent" stroke-width="0" /></a>
 
         <!--<g clip-path="url(#cut-off-bottom)" >
         <a href="#page2"><image x="50" y="50" width="100"

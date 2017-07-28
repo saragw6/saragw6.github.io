@@ -51,7 +51,7 @@ function updateSvgWidth() {
   var $maxWidth = Math.min(200, $(window).height() * .25);
   var $newWidth = $("#sidebar").width();
 
-  $("svg").css("width", Math.min($newWidth, $maxWidth));
+  $("#sidebar > svg").css("width", Math.min($newWidth, $maxWidth));
 }
 
 function updateSidebarFill() {
@@ -66,3 +66,29 @@ function updateSidebarFill() {
 function contains(str, substr) {
   return ~str.indexOf(substr);
 }
+
+
+//scroll svg draw cmopuer
+$(document).ready(function() {
+  $(".filled").css("opacity", "0");
+
+  //variable for the 'stroke-dashoffset' unit
+  var $dashOffset = $(".path").css("stroke-dashoffset");
+  //on a scroll event - execute function
+  $(window).scroll(function() {
+    //calculate how far down the page the user is 
+    var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
+
+    //convert dashoffset pixel value to interger
+    var $newUnit = parseInt($dashOffset, 10);
+    console.log($percentageComplete * ($newUnit / 67));
+
+    //get the value to be subtracted from the 'stroke-dashoffset'
+    var $offsetUnit = $percentageComplete * ($newUnit / 67);
+    //set the new value of the dashoffset to create the drawing effect
+    $(".path").css("stroke-dashoffset", $newUnit - $offsetUnit);
+
+  });
+});
+
+
