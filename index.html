@@ -39,6 +39,7 @@
     • design each page individually for layout - use boxes, multiple columns, icons, 
 
     • smooth scroll for header links !!!!
+    • media query if small switch to thinner font
 
     -->
 
@@ -63,9 +64,9 @@
         Sara Goldstein-Weiss
       </div>
       <div id="navbaricons">
-        <a href="#page2" class="navbaricon" id="codericon"></a>
-        <a href="#page3" class="navbaricon" id="pencilicon"></a>
-        <a href="#page4" class="navbaricon" id="scalesicon"></a>
+        <a href="#page2" class="navbaricon codericon"></a>
+        <a href="#page3" class="navbaricon pencilicon"></a>
+        <a href="#page4" class="navbaricon scalesicon"></a>
       </div>
     </div>
 
@@ -200,9 +201,14 @@
 
     <div id="content">
       <div id="page1">
-        <div class="container">
+        <div class="flex-container">
           <div id="name">
             SARA GW
+          </div>
+          <div id="heroicons">
+            <a href="#page2" class="heroicon codericon"></a>
+            <a href="#page3" class="heroicon pencilicon"></a>
+            <a href="#page4" class="heroicon scalesicon"></a>
           </div>
         </div>
         <div><a href="#page2" class="caret"></a></div>
