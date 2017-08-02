@@ -10,6 +10,7 @@
         font-style:normal;
       }
 
+@font-face{font-family:"gotham-pro-light";font-family:"gotham-pro-light";src:url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.eot");src:url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.eot?#iefix") format("embedded-opentype"),url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.woff") format("woff"),url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.ttf") format("truetype"),url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.svg#gotham-pro-light") format("svg");font-weight:normal;font-style:normal;}      
       @font-face {
       font-family: "Tall Films";
       src: url("Tall-Films/Tall Film.ttf");
@@ -193,7 +194,7 @@
       }
 
 #navbar {
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -206,9 +207,10 @@
 }
 
 #navbarname {
-  padding-left: 1vw;
   padding-top: 1vh;
-  font-family: "gotham-pro-bold";
+  padding-left: 1vw;
+  font-family: "gotham-pro-light";
+  margin-top: 1vh;
 }
 
 #navbaricons {
@@ -228,12 +230,13 @@
 .navbaricon {
   display: inline-block;
   width: inherit;
-  height: inherit;
+  height: 8vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
   margin-right: 1vh;
   min-width: 8vh;
+  margin-top: 1vh;
 }
 
 #heroicons {

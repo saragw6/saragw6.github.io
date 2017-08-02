@@ -90,3 +90,8 @@ $(document).ready(function() {
 
   });
 });
+
+// header & hero transition
+////use scrolltop and transitions and toggle classes to change height/display of header and opacity of hero content
+
+//svg scroll drawings better - use (> 147) for example, and just kick off an animation at that scroll point? animate to erase a pew pixels later?
