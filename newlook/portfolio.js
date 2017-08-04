@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(document).ready(addSmoothScroll);
+
+function addSmoothScroll(){
 // Add smooth scrolling to all links
   $(".caret, svg > a, #navbaricons > a, #heroicons > a").on('click', function(event) {
     console.log(this.href.baseVal);
@@ -12,7 +14,7 @@ $(document).ready(function(){
 
     } // End if
   });
-});
+}
 
 function smoothScroll(target) {
     event.preventDefault();
@@ -32,7 +34,7 @@ function smoothScroll(target) {
 }
 
 //SCROLL ANIMATE SVG
-$(document).ready(function() {
+/*$(document).ready(function() {
   //variable for the 'stroke-dashoffset' unit
   updateSvgWidth();
   updateSidebarFill();
@@ -44,24 +46,25 @@ $(document).ready(function() {
   $(window).resize(function() {
     updateSvgWidth()
   });
-});
+});*/
 
 
-function updateSvgWidth() {
+/*function updateSvgWidth() {
   var $maxWidth = Math.min(200, $(window).height() * .25);
   var $newWidth = $("#sidebar").width();
 
   $("#sidebar > svg").css("width", Math.min($newWidth, $maxWidth));
 }
+*/
 
-function updateSidebarFill() {
+/*function updateSidebarFill() {
     //calculate how far down the page the user is 
     var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())));
     //get the value to be subtracted from the 'stroke-dashoffset'
     var $newHeight = $percentageComplete * 650;
     //set the new value of the dashoffset to create the drawing effect
     $(".clipper").css("height", $newHeight);
-}
+}*/
 
 function contains(str, substr) {
   return ~str.indexOf(substr);
