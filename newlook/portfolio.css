@@ -90,6 +90,7 @@
         padding-left: 5vw;
         padding-top: 10vh;
         background-color: #111;
+
       }
 
       #page3 {
@@ -99,6 +100,7 @@
         padding-right: 5vw;
         padding-left: 5vw;
         padding-top: 10vh;
+
       }
 
       #page4 {
@@ -108,6 +110,7 @@
         padding-left: 5vw;
         padding-top: 10vh;
         background-color: #111;
+
       }
 
 
@@ -302,6 +305,7 @@
 .workexperience {
   display: flex;
   align-items: flex-start;
+  flex: 1 0 400px;
 }
 
 .workdescription {
@@ -315,8 +319,5 @@
 
 .work-container {
   display: flex;
-}
-
-.page-wrapper {
-  width: 100vw;
+  flex-flow: row wrap;
 }
