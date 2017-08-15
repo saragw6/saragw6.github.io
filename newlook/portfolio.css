@@ -134,35 +134,11 @@
         padding-right: 5vw; /*TODO - MEDIA QUERY*/
       }
 
-      .caret {
-        position: relative;
-        cursor: pointer;
-        left: 50%;
-        margin-left: -13px; /*TODO BOTTOM SPACING - MAY NEED TO NOT BE RELATIVE POS*/
+      .angle-down-wrap {
+        width: 100%;
+        text-align: center;
       }
-
-      .caret:before {
-        content: '';
-        position: absolute;
-        top: 25%;
-        left: 12px;
-        border-top: 15px solid #38B77A;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        z-index: -10;
-      }
-
-      .caret:after {
-        content: '';
-        position: absolute;
-        top: 25%;
-        left: 16px;
-        border-top: 11px solid #222;
-        border-left: 11px solid transparent;
-        border-right: 11px solid transparent;
-      }
-
-
+      
 /* UI */
       .project {
         display: flex;
@@ -208,6 +184,7 @@
       }
 
 #navbar {
+  z-index: 1;
   height: 10vh;
   width: 100%;
   position: fixed;

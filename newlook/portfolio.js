@@ -2,7 +2,7 @@ $(document).ready(addSmoothScroll);
 
 function addSmoothScroll(){
 // Add smooth scrolling to all links
-  $(".caret, svg > a, #navbaricons > a, #heroicons > a").on('click', function(event) {
+  $(".angle-down-wrap > a, svg > a, #navbaricons > a, #heroicons > a").on('click', function(event) {
     console.log(this.href.baseVal);
     // Make sure this.hash has a value before overriding default behavior
     if (!$.isEmptyObject(this.href.baseVal)) {
