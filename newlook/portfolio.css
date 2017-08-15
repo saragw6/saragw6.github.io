@@ -68,6 +68,10 @@
         min-height: 80vh;
       }
 
+      .side-text {
+        width: 100%;
+      }
+
       #page1 .flex-container {
         flex-direction: column;
         justify-content: space-around;
@@ -138,8 +142,8 @@
         width: 100%;
         text-align: center;
       }
-      
-/* UI */
+
+/*///////////// UI \\\\\\\\\\\\\\\\\*/
       .project {
         display: flex;
         font-size: 10pt;
@@ -151,7 +155,47 @@
         margin-right: 20px;
       }
 
-/* /UI */
+/*\\\\\\\\\\/* /UI //////////////////*/
+
+.project-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+}
+
+#project-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+  .project-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+  }
+
+  .project-img {
+    /*background-image: url("http://laparks.org/sites/default/files/pershingsquare/assets/base/img/content2/PS_BGShard1.jpg");*/
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .project-blurb {
+    text-align: center;
+    width: 180px;
+    padding: 10px;
+    flex-grow: 1;
+  }
+
+
 
       h1 {
         /*font-family: 'PT Sans', sans-serif;*/

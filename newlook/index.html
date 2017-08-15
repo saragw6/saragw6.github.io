@@ -51,9 +51,12 @@
     • text wrap images for portfolio of wokr??? slash no thats dumb come up with a prettier idea
     • smooth scroll dont work in firefox
 
-    -->
+    • rename .sidetext
 
-    <!-- VERY ROUGH DRAFT -->
+    • use media query to switch flex direction f project wrapper?
+
+    • use border boxes iether around project descripttions or background colored borders just inside the project images - or both
+    -->
 
     <meta name="my_yellow" content="#F2F0B3">
     <meta name="my_pink" content="#ED6DD3">
@@ -71,7 +74,7 @@
   <body>
     <div id="navbar">
       <div id="navbarname">
-        SARA GOLDSTEIN-WEISS
+        
       </div>
       <div id="navbaricons">
         <a href="#page2" class="navbaricon codericon"></a>
@@ -230,25 +233,25 @@ end computer icon -->
           <div class="side-text">
             <h1>Web & Software Development</h1>
             <p>I'm working towards a degree in Computer Science, and my internship experiences along the way have strengthened my skills as a website developer and software engineer.</p>
-            <h2>Work Experience</h2>
+            <h2>Experience</h2>
             <div class="work-container">
-              <div class="workexperience">
-                <img src="eager.svg" width="70px">
-                <div class="workdescription">
-                  <p>Software Engineering Intern • Eager Platform, Co.</p>
-                  <h6>Jun 2016 - Aug 2016 (2 months) | Cambridge, MA</h6>
-                  <ul>
-                    <li>Implemented a web application with HTML, Javascript, Angular and Go language</li>
-                    <li> Integrated existing web plugins with Shopify's app store using the Shopify API</li>
-                  </ul>
-                </div>
-              </div>
               <div class="workexperience">
                 <img src="bluebeam.svg" width="70px">
                 <div class="workdescription">
                   <p>Software Engineering Intern • Bluebeam Software</p>
-                  <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
+                  <h6>Jun 2017 - Aug 2017 | Pasadena, CA</h6>
                   <ul><li>Collaborated with a team of developers on a new release of Studio Enterprise</li></ul>
+                </div>
+              </div>
+              <div class="workexperience">
+                <img src="eager.svg" width="70px">
+                <div class="workdescription">
+                  <p>Software Engineering Intern • Eager Platform, Co.</p>
+                  <h6>Jun 2016 - Aug 2016 | Cambridge, MA</h6>
+                  <ul>
+                    <li>Implemented a web application with HTML, Javascript, Angular and Go language</li>
+                    <li> Integrated existing web plugins with Shopify's app store using the Shopify API</li>
+                  </ul>
                 </div>
               </div>
               <!--<h2>Projects</h2>
@@ -260,8 +263,10 @@ end computer icon -->
       </div>
 
       <div id="page3">
+
+<!--         //////////
         <div class="flex-container">
-          <!--<div class="side-icon"><img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png"></div>-->
+          <! - -<div class="side-icon"><img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png"></div>- - >
           <div class="side-text">
             <h1>User Interface & Graphic Design</h1>
             <p>In designing digital graphics or crafting user interfaces, I get to combine my visual skills with the more analytical world of computer science.</p>
@@ -275,15 +280,69 @@ end computer icon -->
               </div>
             </div>
             <div class="project">
-                <div class="visual">
-                  <a href="http://saragw6.github.io/music-personality/" target="new"><img src="20-20.gif" width="150px"></a>
-                </div>
-                <div class="description">
-                  <div class="title"><a href="http://saragw6.github.io/music-personality/" target="new">Twenty/Twenty</a></div> is a music personality quiz I created with a group in my Web Programming course last semester. Our assignment was simply to create any web application having to do with music. We worked together to create a buzzfeed-esque personality quiz that builds a song as the user responds to questions. Users can see how their answers compare to others’, share their results on Facebook, or enter another user’s “song code” to hear a friend’s results. I found this project extremely rewarding because we had the freedom to create whatever we envisioned. Furthermore, we got to put together all of the tools we had learned so far, and we also pushed ourselves to learn a few more along the way. We used HTML, CSS, Javascript, jQuery, Ajax, Node.js, geolocation, Bootstrap, MongoDB, local storage, the Facebook API, and more to create this quiz and we were overjoyed to see our hard work come together in a tangible product.
-                </div>
+              <div class="visual">
+                <a href="http://saragw6.github.io/music-personality/" target="new"><img src="20-20.gif" width="150px"></a>
               </div>
+              <div class="description">
+                <div class="title"><a href="http://saragw6.github.io/music-personality/" target="new">Twenty/Twenty</a></div> is a music personality quiz I created with a group in my Web Programming course last semester. Our assignment was simply to create any web application having to do with music. We worked together to create a buzzfeed-esque personality quiz that builds a song as the user responds to questions. Users can see how their answers compare to others’, share their results on Facebook, or enter another user’s “song code” to hear a friend’s results. I found this project extremely rewarding because we had the freedom to create whatever we envisioned. Furthermore, we got to put together all of the tools we had learned so far, and we also pushed ourselves to learn a few more along the way. We used HTML, CSS, Javascript, jQuery, Ajax, Node.js, geolocation, Bootstrap, MongoDB, local storage, the Facebook API, and more to create this quiz and we were overjoyed to see our hard work come together in a tangible product.
+              </div>
+            </div>
           </div>
         </div>
+
+        //////////////// -->
+        <div class="flex-container">
+          <div class="side-text">
+            <h1>User Interface & Graphic Design</h1>
+            <p>In designing digital graphics or crafting user interfaces, I get to combine my visual skills with the more analytical world of computer science.</p>
+            <h2>Projects</h2>
+            <div id="project-container">
+
+
+              <div class="project-row one">
+                <div class="project-wrap">
+                  <div class="project-img" style="background-image: url(jumboffcampus.gif)">
+                  </div>
+                  <div class="project-blurb">
+                    Jumboff campus - a housing search mobile app prototyped wtih Axure RP
+                  </div>
+                </div>
+
+                <div class="project-wrap">
+                  <div class="project-img" style="background-image: url(20-20.gif)">
+                  </div>
+                  <div class="project-blurb">
+                    Twenty-Twenty - A music personality quiz web app
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="project-row two">
+                <div class="project-wrap">
+                  <div class="project-img" style="background-image: url(boomBC.jpg)">
+                  </div>
+                  <div class="project-blurb">
+                    Business Cards - designed with Illustrator
+                  </div>
+                </div>
+
+                <div class="project-wrap">
+                  <div class="project-img" style="background-image: url(derby-stamps.jpg)">
+                  </div>
+                  <div class="project-blurb">
+                    Roller Derby Stamps - designed with Illustrator
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
         <div  class="angle-down-wrap"><a href="#page4"><img src="angle-down.svg"/></a></div>
       </div>
 
@@ -293,23 +352,22 @@ end computer icon -->
           <div class="side-text">
             <h1>Social Justice Work</h1>
             I'm majoring in Gender Studies because I want to learn to think critically about power systems that disadvantage groups such as women, people of color, and LGBTQ folks. I hope to apply my studies to create real change and lift up people who have been unfairly treated.
-            <h2>Work Experience</h2>
+            <h2>Experience</h2>
             <p>Research and Archive Assistant • Haifa Women's Coalition</p>
-            <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
+            <h6>Jun 2015 - Aug 2015 | Haifa, Israel</h6>
             <ul>
               <li>Researched and authored a position paper for use in policy making</li>
               <li>Implemented online archive of historical Israeli feminist organizations</li>
               <li>Selected grant-giving organizations and wrote grant proposals</li>
             </ul>
-            <h2>Organizations</h2>
             <p>Peer Educator • Tufts Women's Center</p>
-            <h6>Sep 2015 to Present (1 year, 10 months) | Somerville, Massachusetts</h6>
+            <h6>Sep 2015 to Present | Somerville, Massachusetts</h6>
             <ul>
               <li>Build workshops on gender and intentional space</li>
               <li>Conduct workshops for student groups on campus</li>
             </ul>
             <p>Co-chair • Jewish and Queer Students at Tufts (JQUEST)</p>
-            <h6>Dec 2014 to May 2016 (1 year, 5 months)Somerville, Massachusetts</h6>
+            <h6>Dec 2014 to May 2016 | Somerville, Massachusetts</h6>
             <ul>
               <li>Organize events to bring together Jewish and queer communities</li>
               <li>Facilitate discussion group to foster community and support</li>
