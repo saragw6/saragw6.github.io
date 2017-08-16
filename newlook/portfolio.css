@@ -3,14 +3,23 @@
       @font-face{
         font-family:"gotham-pro-bold";
         font-family:"gotham-pro-bold";
-        src:url("https://www.fontify.me/cm/4f92e8ced6b2dbe8cde4ff2037d82890/gotham-pro-bold.woff")
+        src:url("gotham-pro-bold.woff")
         format("woff");
         font-weight:
         normal;
         font-style:normal;
       }
 
-@font-face{font-family:"gotham-pro-light";font-family:"gotham-pro-light";src:url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.eot");src:url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.eot?#iefix") format("embedded-opentype"),url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.woff") format("woff"),url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.ttf") format("truetype"),url("https://www.fontify.me/cm/a21d90f21e920936f1e3ac81f4c0459f/gotham-pro-light.svg#gotham-pro-light") format("svg");font-weight:normal;font-style:normal;}      
+      @font-face{
+        font-family:"gotham-pro-light";
+        font-family:"gotham-pro-light";
+        src:url("gotham-pro-light.woff")
+        format("woff");
+        font-weight:
+        normal;
+        font-style:normal;
+      }      
+      
       @font-face {
       font-family: "Tall Films";
       src: url("Tall-Films/Tall Film.ttf");
@@ -72,6 +81,10 @@
         width: 100%;
       }
 
+      .centering {
+        max-width: 800px;
+      }
+
       #page1 .flex-container {
         flex-direction: column;
         justify-content: space-around;
@@ -84,6 +97,10 @@
         padding-right: 5vw;
         padding-left: 5vw;
         padding-bottom: 10vh;
+
+        background: linear-gradient(rgba(0, 0, 0, .75), rgba(50, 50, 50, .85)), url("https://static.pexels.com/photos/371553/pexels-photo-371553.jpeg");
+        background-position: center bottom;
+        background-size: cover;
       }
 
       #page2 {
@@ -126,7 +143,7 @@
         font-size: 20vmin;
         font-family: "gotham-pro-bold";
         padding-top: 15vmin;
-        color: #38B77A;
+        color:  #7FCDE0;/*#38B77A;*/
         /*margin-bottom: -5vw;*/
         /*padding-right: 5vw;*/
       }
@@ -159,8 +176,11 @@
 
 .project-wrap {
   display: flex;
-  flex-flow: row wrap;
-  padding: 10px;
+  flex-flow: row;
+  margin: 5px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  flex-grow: 1;
 }
 
 #project-container {
@@ -176,6 +196,7 @@
     align-items: center;
     justify-content: center;
     width: inherit;
+    flex-flow: row wrap;
   }
 
   .project-img {
@@ -185,7 +206,7 @@
     width: 200px;
     height: 200px;
     flex-shrink: 0;
-    flex-grow: 1;
+    flex-grow: 0;
   }
 
   .project-blurb {
@@ -214,13 +235,13 @@
       }
 
       h1, h2 {
-        color: #38B77A;
+        color: #7FCDE0;
       }
 
       h6 {
         /*color: #121924;
         color: #232C4C;*/
-        color: #FD7C6E;
+        color: #C58EA5;/*#FD7C6E;*/
       }
 
       .clipper {
@@ -333,7 +354,7 @@
   flex: 7;
 }
 
-.workexperience > img {
+.workexperience > a {
   flex: 0;
   margin: 15px;
 }
