@@ -101,7 +101,7 @@
         padding-left: 5vw;
         padding-bottom: 10vh;
 
-        background: linear-gradient(rgba(0, 0, 0, .75), rgba(50, 50, 50, .85)), url("https://static.pexels.com/photos/371553/pexels-photo-371553.jpeg");
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("https://static.pexels.com/photos/371553/pexels-photo-371553.jpeg");
         background-position: center bottom;
         background-size: cover;
       }
@@ -113,8 +113,6 @@
         padding-right: 5vw;
         padding-left: 5vw;
         padding-top: 10vh;
-        background-color: #111;
-
       }
 
       #page3 {
@@ -124,7 +122,7 @@
         padding-right: 5vw;
         padding-left: 5vw;
         padding-top: 10vh;
-
+        background-color: #111;
       }
 
       #page4 {
@@ -133,8 +131,6 @@
         padding-right: 5vw;
         padding-left: 5vw;
         padding-top: 10vh;
-        background-color: #111;
-
       }
 
 
