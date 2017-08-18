@@ -248,6 +248,7 @@
       }
 
 #navbar {
+  display: none;
   z-index: 1;
   height: 10vh;
   width: 100%;

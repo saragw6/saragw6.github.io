@@ -51,6 +51,16 @@ function getNavBarName() {
   return $(window).height() >= (55/67) * $(window).width() - (325/67) ? "SARA GW" : "SARA GOLDSTEIN-WEISS";
 }
 
+$(document).ready(function(){                    
+    $(window).scroll(function(){                          
+        if ($(this).scrollTop() > 200) {
+            $('#navbar').fadeIn(500);
+        } else {
+            $('#navbar').fadeOut(500);
+        }
+    });
+});
+
 
 /////// SVG SIDEBAR FUNCTIONS ///////////////
 
