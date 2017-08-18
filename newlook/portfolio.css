@@ -258,7 +258,7 @@
   background-size: auto 12vh;*/
   background-color: #222;
   font-size: 7vh;
-  box-shadow: inset 0px -100px 100px -100px #111, 0 0 20px #0d0d0d;
+  box-shadow: inset 0px -100px 100px -100px #111, 0 0 100px #0d0d0d;
 }
 
 #navbarname {
@@ -266,6 +266,12 @@
   padding-left: 1vw;
   font-family: "gotham-pro-light";
   margin-top: 1vh;
+}
+
+#navbarname > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 #navbaricons {
