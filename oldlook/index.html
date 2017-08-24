@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- TODO 
+    • MAKE FONT SIZES RESPONSIVE
+    • make cards that flip like at Prime Portal, saying little thing about each when you hover?
+    • make metas for colors that actually work
+    • make sidebar that has oulines that fill with a color as you scroll - lol cute idea how tho
+    • socail justice doubles lines :/
+    • fix flexbox when it gets rly narrow it gets weird
+    • change margins to be responsive not px
+    • HUGE problems when you resize page with lots of text
+    • add way to nav back to top?
+    • full name header, responsive
+    • when scroll is within a certain range, englarge relevant icon
+    • prgress black fill in stages, not continuously
+    • click region for sidebar links needs to be circular
+    • fix flex so sidebar doesn't get overrun
+    • fix sidebar size on load
+    -->
+
+    <!-- VERY ROUGH DRAFT -->
+
+    <meta name="my_yellow" content="#F2F0B3">
+    <meta name="my_pink" content="#ED6DD3">
+    <meta name="my_green" content="#ED6DD3">
+    <meta name="my_purple" content="#A47DF2">
+    <meta name="my_blue" content="#96C3FF">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:700" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="portfolio.js"></script>
+
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <svg version="1.1"
+           width="33%"
+           baseProfile="full"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 0 200 650">
+
+        <defs>
+          <clipPath id="cut-off-bottom">
+            <rect class="clipper" x="0" y="0" width="200"/>
+          </clipPath>
+
+
+          <g id="icons">
+            <!--CODING IMAGE -->
+            <g transform="translate(50.000000,170.000000) scale(0.050000,-0.050000)"
+              stroke="none">
+              <path d="M1156 1601 c-24 -27 -436 -1109 -436 -1146 0 -65 92 -102 135 -55 10
+              11 91 212 182 447 281 734 264 687 252 722 -6 17 -19 36 -29 41 -31 16 -85 12
+              -104 -9z"/>
+              <path d="M565 1590 c-11 -4 -143 -131 -292 -282 -251 -251 -273 -277 -273
+              -308 0 -31 23 -57 276 -311 160 -160 286 -279 300 -282 56 -10 104 38 95 98
+              -2 11 -107 127 -234 258 l-230 238 104 107 c57 59 161 166 231 237 69 72 128
+              139 129 150 6 42 -11 76 -46 91 -19 8 -36 14 -37 13 -2 0 -12 -4 -23 -9z"/>
+              <path d="M1374 1586 c-34 -15 -58 -64 -47 -94 4 -9 110 -124 236 -254 l229
+              -238 -228 -236 c-126 -129 -232 -244 -236 -254 -19 -51 40 -113 96 -103 14 3
+              140 122 300 282 254 254 276 280 276 311 0 32 -22 56 -277 311 -153 153 -287
+              280 -298 283 -11 3 -34 -1 -51 -8z"/>
+            </g>
+
+            <!-- /CODING IMAGE -->
+
+            <!-- pencil image -->
+            <g transform="translate(50.000000,390.000000) scale(0.0195313,-0.01953125)"
+              stroke="none">
+              <path d="M3724 4546 c-63 -20 -118 -64 -249 -195 l-120 -121 438 -438 438
+              -437 137 140 c169 171 187 203 187 325 0 146 -3 149 -284 433 -281 284 -302
+              298 -430 304 -45 2 -92 -3 -117 -11z"/>
+              <path d="M2025 2900 l-1210 -1210 438 -437 437 -438 1212 1213 1213 1212 -313
+              312 -312 313 -1150 -1150 -1150 -1150 -60 60 -60 60 1150 1150 1150 1150 -63
+              63 c-34 34 -65 62 -67 62 -3 0 -550 -545 -1215 -1210z"/>
+              <path d="M707 1539 c-23 -124 -147 -972 -144 -976 5 -4 997 144 1003 150 2 2
+              -190 196 -425 431 l-428 428 -6 -33z"/>
+            </g>
+            <!-- /pencil image -->
+
+            <!-- scales image -->
+            <g transform="translate(50.000000,610.000000) scale(0.050000,-0.050000)"
+             stroke="none">
+              <path d="M968 1766 c-22 -11 -23 -18 -28 -130 -4 -102 -8 -120 -24 -132 -16
+              -11 -68 -14 -255 -14 l-236 0 -208 -488 c-139 -326 -207 -498 -207 -522 0 -29
+              10 -44 68 -100 161 -159 369 -200 550 -109 113 56 222 162 222 215 0 12 -83
+              217 -185 454 -102 237 -185 438 -185 446 0 31 40 34 520 34 475 0 520 -3 520
+              -33 0 -7 -83 -206 -185 -444 -116 -271 -185 -444 -185 -465 0 -28 11 -43 70
+              -100 82 -79 185 -134 283 -151 140 -24 293 32 417 151 61 58 70 72 70 102 0
+              24 -69 196 -208 520 l-208 485 -243 5 c-225 5 -244 6 -257 24 -10 14 -14 50
+              -14 127 0 73 -4 110 -12 116 -22 17 -56 21 -80 9z m-376 -868 c86 -202 145
+              -353 142 -362 -6 -15 -40 -16 -307 -14 -274 3 -302 5 -305 20 -3 16 270 668
+              291 696 6 7 15 11 20 9 6 -2 77 -159 159 -349z m995 340 c24 -32 295 -689 290
+              -702 -6 -14 -44 -16 -307 -16 -265 0 -301 2 -307 16 -3 9 45 134 112 292 192
+              449 188 441 212 410z"/>
+            </g>
+            <!-- /scales image -->
+          </g>
+        </defs>
+
+        <rect width="100%" height="100%" fill="transparent" />
+
+        <circle cx="100" cy="10" r="10" fill="#5F5F5F" />
+
+        <g stroke="#5F5F5F" stroke-width="5">
+          <use xlink:href="#icons" fill="#5F5F5F"></use>
+          <circle cx="100" cy="120" r="80" fill="transparent" />
+          <circle cx="100" cy="340" r="80" fill="transparent" />
+          <circle cx="100" cy="560" r="80" fill="transparent" />
+
+          <line x1="100" y1="10" x2="100" y2="40" />
+          <line x1="100" y1="200" x2="100" y2="260" />
+          <line x1="100" y1="420" x2="100" y2="480" />
+        </g>
+
+        <g stroke-width="5"  stroke="#2C2C2C" clip-path="url(#cut-off-bottom)" >
+          <use xlink:href="#icons" fill="#2C2C2C"></use>
+          <circle cx="100" cy="10" r="10" fill="#2C2C2C" stroke-width="0"/>
+          <circle cx="100" cy="120" r="80" fill="transparent" />
+          <circle cx="100" cy="340" r="80" fill="transparent" />
+          <circle cx="100" cy="560" r="80" fill="transparent" />
+
+          <line x1="100" y1="10" x2="100" y2="40" />
+          <line x1="100" y1="200" x2="100" y2="260" />
+          <line x1="100" y1="420" x2="100" y2="480" />
+        </g>
+
+          <a href="#page1"><circle cx="100" cy="10" r="15" fill="transparent" /></a>
+          <a href="#page2"><circle cx="100" cy="120" r="90" fill="transparent" stroke-width="0" /></a>
+          <a href="#page3"><circle cx="100" cy="340" r="90" fill="transparent" stroke-width="0" /></a>
+          <a href="#page4"><circle cx="100" cy="560" r="90" fill="transparent" stroke-width="0" /></a>
+
+        <!--<g clip-path="url(#cut-off-bottom)" >
+        <a href="#page2"><image x="50" y="50" width="100"
+            xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png" /></a>
+        <a href="#page3"><image x="50" y="270" width="100"
+            xlink:href="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png" /></a>
+        <image x="50" y="490" width="100"
+            xlink:href="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png" />
+          </g>-->
+
+
+        <!--<text x="125" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+
+      use clipping and a rly tall gradient that you move down the page as the page scrolls
+      img clip is useless right now - embed as svg instead? or use image as clip mask
+
+      -->
+    </div>
+
+    <div id="content">
+      <div id="page1">
+        <div class="container">
+          <div id="name">
+            SARA GW
+          </div>
+        </div>
+        <div><a href="#page2" class="caret"></a></div>
+      </div>
+
+      <div id="page2">
+        <div class="flex-container">
+          <!--<div class="side-icon"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/72566-200.png"></div>-->
+          <div class="side-text">
+            <h1>Web & Software Development</h1>
+            <p>I'm working towards a degree in Computer Science, and my internship experiences along the way have strengthened my skills as a website developer and software engineer.</p>
+            <h2>Work Experience</h2>
+            <div class="halfcontainer">
+              <p>Software Engineering Intern • Eager Platform, Co.</p>
+              <h6>Jun 2016 - Aug 2016 (2 months) | Cambridge, MA</h6>
+              <ul>
+                <li>Implemented a web application with HTML, Javascript, Angular and Go language</li>
+                <li> Integrated existing web plugins with Shopify's app store using the Shopify API</li>
+              </ul>
+            </div>
+            <div class="halfcontainer">
+              <p>Software Engineering Intern • Bluebeam Software</p>
+              <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
+              <ul><li>Collaborated with a team of developers on a new release of Studio Enterprise</li></ul>
+              <!--<h2>Projects</h2>
+              <p>unblack edges, music personality quiz</p>-->
+            </div>
+          </div>
+        </div>
+        <div><a href="#page3" class="caret"></a></div>
+      </div>
+
+      <div id="page3">
+        <div class="flex-container">
+          <!--<div class="side-icon"><img src="https://i1.wp.com/simpleicon.com/wp-content/uploads/pencil.png"></div>-->
+          <div class="side-text">
+            <h1>User Interface & Graphic Design</h1>
+            <p>In designing digital graphics or crafting user interfaces, I get to combine my visual skills with the more analytical world of computer science.</p>
+            <h2>Projects</h2>
+            <div class="project">
+              <div class="visual">
+                <a href="http://hd2yq4.axshare.com/menu.html" target="new"><img src="jumboffcampus.gif" height="150px"></a>
+              </div>
+              <div class="description">
+                <div class="title"><a href="http://hd2yq4.axshare.com/menu.html" target="new">Jumboffcampus</a></div> is a user interface project that I worked on with a partner in my Human-Computer Interaction course this semester. We created a web prototype for a mobile app to help Tufts University students find off-campus housing and form a community to share advice for the housing search. Over a period of several weeks we created a preliminary design report, a full design and specification, a low-fidelity prototype that we tested ourselves, and then a medium fidelity prototype for formal usability testing. Finally, we redesigned and implemented the prototype you see at the link, based on the results of our user testing. We used Axure RP to create our prototypes, so what you see is not an example of my code, but it is an interface prototype I created.
+              </div>
+            </div>
+            <div class="project">
+                <div class="visual">
+                  <a href="http://saragw6.github.io/music-personality/" target="new"><img src="20-20.gif" width="150px"></a>
+                </div>
+                <div class="description">
+                  <div class="title"><a href="http://saragw6.github.io/music-personality/" target="new">Twenty/Twenty</a></div> is a music personality quiz I created with a group in my Web Programming course last semester. Our assignment was simply to create any web application having to do with music. We worked together to create a buzzfeed-esque personality quiz that builds a song as the user responds to questions. Users can see how their answers compare to others’, share their results on Facebook, or enter another user’s “song code” to hear a friend’s results. I found this project extremely rewarding because we had the freedom to create whatever we envisioned. Furthermore, we got to put together all of the tools we had learned so far, and we also pushed ourselves to learn a few more along the way. We used HTML, CSS, Javascript, jQuery, Ajax, Node.js, geolocation, Bootstrap, MongoDB, local storage, the Facebook API, and more to create this quiz and we were overjoyed to see our hard work come together in a tangible product.
+                </div>
+              </div>
+          </div>
+        </div>
+        <div><a href="#page4" class="caret"></a></div>
+      </div>
+
+      <div id="page4">
+        <div class="flex-container">
+          <!--<div class="side-icon"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/7728-200.png"></div>-->
+          <div class="side-text">
+            <h1>Social Justice Work</h1>
+            I'm majoring in Gender Studies because I want to learn to think critically about power systems that disadvantage groups such as women, people of color, and LGBTQ folks. I hope to apply my studies to create real change and lift up people who have been unfairly treated.
+            <h2>Work Experience</h2>
+            <p>Research and Archive Assistant • Haifa Women's Coalition</p>
+            <h6>Jun 2015 - Aug 2015 (2 months) | Haifa, Israel</h6>
+            <ul>
+              <li>Researched and authored a position paper for use in policy making</li>
+              <li>Implemented online archive of historical Israeli feminist organizations</li>
+              <li>Selected grant-giving organizations and wrote grant proposals</li>
+            </ul>
+            <h2>Organizations</h2>
+            <p>Peer Educator • Tufts Women's Center</p>
+            <h6>Sep 2015 to Present (1 year, 10 months) | Somerville, Massachusetts</h6>
+            <ul>
+              <li>Build workshops on gender and intentional space</li>
+              <li>Conduct workshops for student groups on campus</li>
+            </ul>
+            <p>Co-chair • Jewish and Queer Students at Tufts (JQUEST)</p>
+            <h6>Dec 2014 to May 2016 (1 year, 5 months)Somerville, Massachusetts</h6>
+            <ul>
+              <li>Organize events to bring together Jewish and queer communities</li>
+              <li>Facilitate discussion group to foster community and support</li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
