@@ -1,0 +1,181 @@
+@namespace svg url(http://www.w3.org/2000/svg);
+
+      @font-face {
+      font-family: "Tall Films";
+      src: url("Tall-Films/Tall Film.ttf");
+      }
+
+      @font-face {
+      font-family: "Gogoia";
+      src: url("gogoia/GOGOIA-Regular.otf");
+      }
+
+      @font-face {
+      font-family: "Axis";
+      src: url("Axis Extrabold.otf");
+      }
+
+      body {
+        display: flex;
+        margin: 0px;
+        /*font-family: 'PT Sans', sans-serif;*/
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 500;
+        background-color: #EEEEEE;
+        /*min-width: 950px;*/
+      }
+
+
+      #sidebar-flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #sidebar {
+        width: inherit;
+        background-color: #EEEEEE;
+        /*padding-top: 20px; CHANGE THIS
+        padding-right: 20px;*/
+        /*padding: 20px;*/
+        padding: 5vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /*flex-basis: auto;*/
+        /*flex-basis: 33%; /*not sure if i need this*/
+      }
+
+      #sidebar > a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      #content {
+        flex: 3;
+        padding-right: 5vw;
+        padding-left: 5vw;
+      }
+
+
+
+
+      .flex-container {
+        display: flex;
+        min-height: 80vh;
+      }
+
+      .container {
+        min-height: 90vh;
+        height: auto;
+      }
+
+
+
+      .first-page {
+        min-height: 80vh;
+      }
+
+      .middle-page {
+        /*border: 2px solid #A47DF2;*/
+        min-height: 80vh;
+        padding-top: 10vh;
+      }
+
+
+      .last-page {
+        /*border: 2px solid #ED6DD3;*/
+        min-height: 90vh;
+        padding-top: 10vh;
+      }
+
+
+      #name {
+        float: right;
+        background-color: inherit;
+        text-align: right;
+        font-size: 15vmax;
+        font-family: "Gogoia";
+        padding-top: 5vw;
+        color: #2C2C2C;
+        /*margin-bottom: -5vw;*/
+        /*padding-right: 5vw;*/
+      }
+
+      svg {
+        /*width: inherit;*/
+        flex-shrink: 1;
+        min-height: 0;
+        position: fixed;
+        /*padding-left: 5vw;
+        padding-right: 5vw; /*TODO - MEDIA QUERY*/
+      }
+
+      .caret {
+        position: relative;
+        cursor: pointer;
+        left: 50%;
+        margin-left: -13px; /*TODO BOTTOM SPACING - MAY NEED TO NOT BE RELATIVE POS*/
+      }
+
+      .caret:before {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: 12px;
+        border-top: 15px solid #000000;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+      }
+
+      .caret:after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: 16px;
+        border-top: 11px solid #EEEEEE;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+      }
+
+
+/* UI */
+      .project {
+        display: flex;
+        font-size: 10pt;
+        margin-bottom: 15px;
+        float: left;
+      }
+
+      .visual {
+        margin-right: 20px;
+      }
+
+/* /UI */
+
+      h1 {
+        /*font-family: 'PT Sans', sans-serif;*/
+        font-family: "Axis";
+        font-weight: bold;
+      }
+
+      h2 {
+        font-family: "Axis";
+      }
+
+      h6 {
+        font-family: "Axis";
+        margin: -10px;
+        margin-left: 0px;
+      }
+
+      h1, h2, h6 {
+        color: #2C2C2C;
+      }
+
+      .clipper {
+        height: 0px;
+      }
+
+      .goal {
+        padding-bottom: 20px;
+      }
