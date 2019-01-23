@@ -103,6 +103,7 @@
 
       svg {
         /*width: inherit;*/
+        visibility: hidden;
         flex-shrink: 1;
         min-height: 0;
         position: fixed;
