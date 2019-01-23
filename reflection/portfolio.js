@@ -35,6 +35,8 @@ function smoothScroll(target) {
 $(document).ready(function() {
   //variable for the 'stroke-dashoffset' unit
   updateSvgWidth();
+
+  $("svg").css("visibility", "visible");
   updateSidebarFill();
   //on a scroll event - execute function
   $(window).scroll(function() {
