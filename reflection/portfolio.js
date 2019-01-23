@@ -1,7 +1,6 @@
 $(document).ready(function(){
 // Add smooth scrolling to all links
   $(".caret, svg > a").on('click', function(event) {
-    console.log(this.href.baseVal);
     // Make sure this.hash has a value before overriding default behavior
     if (!$.isEmptyObject(this.href.baseVal)) {
       smoothScroll('div' + this.href.baseVal);
@@ -17,7 +16,6 @@ $(document).ready(function(){
 function smoothScroll(target) {
     event.preventDefault();
     var hash = target;
-    console.log($(hash));
 
     // Using jQuery's animate() method to add smooth page scroll
     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area

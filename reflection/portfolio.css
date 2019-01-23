@@ -1,5 +1,13 @@
 @namespace svg url(http://www.w3.org/2000/svg);
 
+:root {
+  --darkest: #2D2D2F;
+  --less-dark: #545454;
+  --accent1: #E25555;
+  --accent2: #FFE9C7;
+  --accent3: #70E8CB;
+}
+
       @font-face {
       font-family: "Tall Films";
       src: url("Tall-Films/Tall Film.ttf");
@@ -33,16 +41,10 @@
 
       #sidebar {
         width: inherit;
-        /*background-color: #EEEEEE;*/
-        /*padding-top: 20px; CHANGE THIS
-        padding-right: 20px;*/
-        /*padding: 20px;*/
         padding: 5vh;
         flex: 1;
         display: flex;
         flex-direction: column;
-        /*flex-basis: auto;*/
-        /*flex-basis: 33%; /*not sure if i need this*/
       }
 
       #sidebar > a {
@@ -76,14 +78,12 @@
       }
 
       .middle-page {
-        /*border: 2px solid #A47DF2;*/
         min-height: 80vh;
         padding-top: 10vh;
       }
 
 
       .last-page {
-        /*border: 2px solid #ED6DD3;*/
         min-height: 90vh;
         padding-top: 10vh;
       }
@@ -97,25 +97,20 @@
         font-family: "Gogoia";
         padding-top: 5vw;
         color: #2C2C2C;
-        /*margin-bottom: -5vw;*/
-        /*padding-right: 5vw;*/
       }
 
       svg {
-        /*width: inherit;*/
         visibility: hidden;
         flex-shrink: 1;
         min-height: 0;
         position: fixed;
-        /*padding-left: 5vw;
-        padding-right: 5vw; /*TODO - MEDIA QUERY*/
       }
 
       .caret {
         position: relative;
         cursor: pointer;
         left: 50%;
-        margin-left: -13px; /*TODO BOTTOM SPACING - MAY NEED TO NOT BE RELATIVE POS*/
+        margin-left: -13px;
       }
 
       .caret:before {
@@ -154,7 +149,6 @@
 /* /UI */
 
       h1 {
-        /*font-family: 'PT Sans', sans-serif;*/
         font-family: "Axis";
         font-weight: bold;
       }
