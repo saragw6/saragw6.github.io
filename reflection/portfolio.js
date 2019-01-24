@@ -32,7 +32,7 @@ function smoothScroll(target) {
 //SCROLL ANIMATE SVG
 $(document).ready(function() {
   //variable for the 'stroke-dashoffset' unit
-  updateSvgWidth();
+  // updateSvgWidth();
 
   $("svg").css("visibility", "visible");
   updateSidebarFill();
@@ -42,7 +42,7 @@ $(document).ready(function() {
   });
 
   $(window).resize(function() {
-    updateSvgWidth()
+    // updateSvgWidth()
   });
 });
 
