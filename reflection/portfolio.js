@@ -32,7 +32,7 @@ function smoothScroll(target) {
 //SCROLL ANIMATE SVG
 $(document).ready(function() {
   //variable for the 'stroke-dashoffset' unit
-  updateSvgWidth();
+  // updateSvgWidth();
 
   $("svg").css("visibility", "visible");
   updateSidebarFill();
@@ -42,7 +42,7 @@ $(document).ready(function() {
   });
 
   $(window).resize(function() {
-    updateSvgWidth()
+    // updateSvgWidth()
   });
 });
 
@@ -58,7 +58,7 @@ function updateSidebarFill() {
     //calculate how far down the page the user is 
     var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())));
     //get the value to be subtracted from the 'stroke-dashoffset'
-    var $newHeight = $percentageComplete * 760;
+    var $newHeight = $percentageComplete * 802;
     //set the new value of the dashoffset to create the drawing effect
     $(".clipper").css("height", $newHeight);
 }
