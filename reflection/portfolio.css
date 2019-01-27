@@ -69,7 +69,6 @@
         display: inline-block;
         float: right;
         max-width: calc(75vw);
-        border: red solid 2px;
         flex: 3;
         flex-grow: 0;
         position-top: 0;
