@@ -68,7 +68,8 @@
         box-sizing: border-box;
         display: inline-block;
         float: right;
-        max-width: calc(75vw);
+        max-width: calc(100vw - 19vh);
+        min-width: 74vw;
         flex: 3;
         flex-grow: 0;
         position-top: 0;
@@ -128,6 +129,7 @@
         position: fixed;
         height: 90vh;
         max-width: 24vw;
+        width: 19vh;
         padding: 5vh 0;
       }
 
