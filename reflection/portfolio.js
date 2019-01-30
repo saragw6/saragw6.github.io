@@ -24,7 +24,7 @@ function smoothScroll(target) {
     }, 400, function(){
 
       // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
+      // window.location.hash = hash;
 
   });
 }
@@ -65,4 +65,26 @@ function updateSidebarFill() {
 
 function contains(str, substr) {
   return ~str.indexOf(substr);
+}
+
+//https://stackoverflow.com/questions/27980084/scrolling-to-a-element-inside-a-scrollable-div-with-pure-javascript
+function scrollToQuote(quote_id){
+  var elem = '#' + quote_id;
+  console.log("scrolling to ", quote_id);
+    var topPos = $('#' + quote_id).offset().top
+    console.log("topPos ", topPos);
+
+    // $('#feedback-quotes').animate({
+    //       // scrollTop: $(hash).offset().top
+    //       scrollTop: $('#feedback-quotes').scrollTop() + $('#' + quote_id).position().top
+    //     }, 400, function(){});
+
+$('#feedback-quotes').animate({
+        scrollTop:  $('#feedback-quotes').scrollTop() - $('#feedback-quotes').offset().top + $(elem).offset().top 
+    }, 400, ()=>{}); 
+
+
+
+  
+    // document.getElementById('feedback-quotes').scrollTop = (topPos - 10);
 }

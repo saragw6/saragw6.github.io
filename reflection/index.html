@@ -741,9 +741,9 @@
             <h1>Feedback</h1>
             <p>The feedback I collected from all my teammates on various projects has helped me adjust my goals and direct my growth.
             <div id="feedback-flex-container">
-              <div class="feedback-column notes">
+              <div class="feedback-column" id="feedback-notes">
                 <div class="halfcontainer">
-                  <h2>TWU themes</h2>
+                  <h2 class="feedback-header" onclick="scrollToQuote('twu-quotes')">TWU themes</h2>
                   <ul>
                     <li> Strong leadership</li>
                     <li> Good communication with client</li>
@@ -751,14 +751,14 @@
                   </ul>
                 </div>
                 <div class="halfcontainer">
-                  <h2>Queer Undefined</h2>
+                  <h2 class="feedback-header" onclick="scrollToQuote('qu-quotes')">Queer Undefined</h2>
                   <ul><li> Excellent in explaining code</li>
                       <li>Effectively delegated tasks to get started on</li>
                       <li> Used personal time to provide extra support</li>
                   </ul>
                 </div>
                 <div class="halfcontainer">
-                  <h2>Regeneron themes</h2>
+                  <h2 class="feedback-header" onclick="scrollToQuote('regn-quotes')">Regeneron themes</h2>
                   <ul><li> Patient with obstacles from client</li>
                     <li> Fast onboarder</li>
                     <li> Self-driven</li>
@@ -766,15 +766,18 @@
                     <li> Excellent soft skills</li></ul>
                 </div>
               </div>
-              <div class="feedback-column quotes inner-shadow">
+              <div class="feedback-column inner-shadow" id="feedback-quotes">
+                  <div id="twu-quotes"><h2>TWU quotes</h2></div>
                   <div class="feedback-quote  shadow">Showed great potential of leadership skills. She can step out when team met trouble. When the team is short of time to delivery, and met with angry PO, she can come up and handle well under pressure.</div>
                   <div class="feedback-quote  shadow">Wants to enable people rather than be the "smart person". She was aware of that she should not be dominated and will encourage other team member to speak out first.</div>
                   <div class="feedback-quote  shadow">Has a great client mindset. Sara helped the team summarise the priority from PO meeting, and help the team understand the client's needs.</div>
                   <div class="feedback-quote  shadow">You're very helpful. In PO meeting etc you always clarify and can ask PO important questions. You ask questions others wanted to ask but didn't put into words. You're gentle – in a good way, like when the PO was mad in the meeting and you responded.</div>
                   <div class="feedback-quote  shadow"> I am so happy to pair with you to working on the UI design. I have no idea about how to do this, but you are very nice to teach me how to do it patiently.</div>
                   <div class="feedback-quote  shadow">You listen well and always let others speak. I think you are like a center of the team (in a good way). People want your opinion on what to do. It's because you're a good listener that people want to know what you think.</div>
+                  <div id="qu-quotes"><h2>QU Quotes</h2></div>
                   <div class="feedback-quote  shadow">You were really excellent in explaining what your code was doing and in giving me something to start trying to work on, so I could begin to get my hands on what was going on.</div>
                   <div class="feedback-quote  shadow">I really, really appreciated your taking time out of your lunch to meet with me and help me set things up. You were great at explaining and helping, especially because I'd never worked with React before.</div>
+                  <div id="regn-quotes"><h2>Regeneron quotes</h2></div>
                   <div class="feedback-quote  shadow">Super patient with the onboarding which I think is actually a really great trait.</div>
                   <div class="feedback-quote  shadow">I've been impressed with how quick and sharp you've been, and the articulateness with which you talk about some of the more difficult datafixes.</div>
                   <div class="feedback-quote  shadow">From my perspective you have been above the expectation because you take the context more fast than we are expecting and you start contributing to the project also pretty fast, that was more than everyone was expecting because of the situation we have. It was hard to be motivated. You always look motivated, with the project with and with goals.</div>
