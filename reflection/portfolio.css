@@ -203,10 +203,10 @@
       .feedback-quote:before {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -25px;
         /*left: 90%;*/
-        right:30px;
-        border: 12px solid transparent;
+        right:20px;
+        border: 25px solid transparent;
         border-top-color: #EEEEEE;
         margin: -10px;
 /*        -moz-box-shadow:    3px 3px 15px 0 #666;
