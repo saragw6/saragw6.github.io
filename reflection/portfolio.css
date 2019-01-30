@@ -160,6 +160,68 @@
         border-right: 11px solid transparent;
       }
 
+      .side-text {
+        width: 100%;
+      }
+
+      #feedback-flex-container {
+        display: flex;
+      }
+
+      .feedback-column {
+        /*border: solid 1px;*/
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 40%;
+      }
+
+      .feedback-column.quotes {
+        overflow-y: scroll;
+        height: 60vh;
+        margin: 20px 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+
+        background-color: #ddd;
+        border-radius: 10px;
+      }
+
+      .feedback-quote {
+        position: relative;
+        padding: 10px;
+        margin: 20px;
+        background-color: #EEEEEE;
+        /*color: #EEEEEE;*/
+        border-radius: 20px;
+      }
+
+      .feedback-quote:before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        /*left: 90%;*/
+        right:30px;
+        border: 12px solid transparent;
+        border-top-color: #EEEEEE;
+        margin: -10px;
+/*        -moz-box-shadow:    3px 3px 15px 0 #666;
+        -webkit-box-shadow: 3px 3px 15px 0 #666;
+        box-shadow:         3px 3px 15px 0 #666;
+*/      }
+
+
+/*      .shadow {
+        -moz-box-shadow:    3px 3px 15px 0 #666;
+        -webkit-box-shadow: 3px 3px 15px 0 #666;
+        box-shadow:         3px 3px 15px 0 #666;
+      }*/
+
+      .inner-shadow {
+         -moz-box-shadow:    inset 3px 3px 10px 0 #888;
+         -webkit-box-shadow: inset 3px 3px 10px 0 #888;
+         box-shadow:         inset 3px 3px 10px 0 #888;
+      }
+
 
 /* UI */
       .project {
